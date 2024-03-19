@@ -1,11 +1,12 @@
 version: "3.7"
 services:
   mysql:
-    image: mysql:latest
+    image: mysql:5.7
     container_name: mysql_server
     ports:
       - "3306:3306"
     environment:
+      MYSQL_ROOT_PASSWORD: root12345
       MYSQL_DATABASE: yape
       MYSQL_USER: admin
       MYSQL_PASSWORD: admin_yape_12345

@@ -1,4 +1,4 @@
-import {BadRequestException ,Inject,Injectable, InternalServerErrorException, Logger, OnModuleInit } from "@nestjs/common";
+import {BadRequestException ,Inject,Injectable, InternalServerErrorException, OnModuleInit } from "@nestjs/common";
 import { TransactionRepository } from '../infra/repository/transactions.repository';
 import { TransactionEntity } from "../domain/entities/transaction.entity";
 import { ConfigService } from "@nestjs/config";
