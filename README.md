@@ -1,6 +1,6 @@
 ## Description
 
-Api con dos microservicios (Transaction y Anti-fraud).
+Api con dos microservicios (Transaction y Anti-fraud) utilizando kafka para la transmision de eventos y datos.
 
 ## Installation
 
