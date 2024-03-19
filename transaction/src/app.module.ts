@@ -8,13 +8,15 @@ import { join } from 'path';
 
 @Module({
   imports: [
-    ConfigModule.forRoot(),
+    ConfigModule.forRoot({
+      isGlobal: true
+    }),
     TypeOrmModule.forRoot({
       type: 'mysql',
-      username: 'root',
+      username: 'admin',
       host: 'localhost',
       port:  3306,
-      password: '',
+      password: 'admin_yape_12345',
       database: 'yape',
       autoLoadEntities:true,
       entities: [__dirname + '/**/*.entity{.ts,.js}'],
