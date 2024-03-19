@@ -1,7 +1,7 @@
 import { Args, Int, Mutation, Query, Resolver } from "@nestjs/graphql";
 import { TransactionService } from '../../app/transaction.service';
-import { TransactionEntity } from "src/transactions/domain/entities/transaction.entity";
-import { TransactionCreateDto } from "src/transactions/app/dto/transaction.dto";
+import { TransactionEntity } from "../../domain/entities/transaction.entity";
+import { TransactionCreateDto } from "../../app/dto/transaction.dto";
 
 @Resolver()
 export class TransactionResolver{
